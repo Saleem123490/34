@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saleem Mohammed — IT Supervisor Readiness Portfolio</title>
+
+  <!-- Google Font - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS for specific overrides and variables -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Custom utility classes, often defined in style.css, but kept here for clarity with Tailwind context */
+    .panel {
+      @apply bg-white rounded-xl p-6 shadow-lg border border-gray-100;
+    }
+    .lead {
+      @apply text-gray-600 mb-3;
+    }
+    .mono {
+      @apply font-mono text-sm bg-blue-50 p-4 rounded-lg border border-blue-100;
+    }
+    .status {
+      @apply inline-flex px-3 py-1 rounded-full font-semibold text-xs;
+    }
+    .status.green {
+      @apply bg-green-100 text-green-700;
+    }
+    .status.yellow {
+      @apply bg-yellow-100 text-yellow-700;
+    }
+    .status.red {
+      @apply bg-red-100 text-red-700;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-gray-50 text-gray-900 antialiased leading-relaxed p-6 min-h-screen">
+  <div class="site max-w-7xl mx-auto bg-transparent">
+    <header class="top flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between mb-8">
+      <div class="brand flex gap-4 items-center">
+        <div class="logo w-18 h-18 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-bold text-2xl shadow-xl">SM</div>
+        <div>
+          <h1 class="text-2xl font-semibold tracking-tight leading-tight">Saleem Mohammed — IT Supervisor Readiness Portfolio</h1>
+          <div class="meta text-gray-500 text-sm mt-1">Information Technology Field Experience — EX20 • Instructor: Michael Moifolley • 3 August, 2025</div>
+        </div>
+      </div>
+      <nav class="flex flex-wrap gap-2">
+        <a href="#ethics" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">Ethics</a>
+        <a href="#budget" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">Mini Budget</a>
+        <a href="#customer" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">Customer Service</a>
+        <a href="#kpi" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">KPI Dashboard</a>
+        <a href="#hr" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">HR / Memo</a>
+        <a href="#incident" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">Incident</a>
+        <a href="#gantt-chart-section" class="text-blue-700 hover:text-blue-900 bg-blue-100 hover:bg-blue-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">Gantt Chart</a>
+      </nav>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      <!-- Left column: main content -->
+      <section class="lg:col-span-2 space-y-8">
+        <!-- Ethical Dilemma -->
+        <article id="ethics" class="panel">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3" id="ethicsTitle">Ethical Dilemma — Data Manipulation Request</h2>
+          <p class="lead">Being situated as an IT Supervisor, one of the most probable ethical dilemmas is management pressuring an employee to edit performance data to make team productivity appear higher than it is.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div class="panel p-4">
+              <h3 class="text-lg font-medium mt-0">Situation</h3>
+              <p class="text-gray-700 text-sm">
+                Management requests data edits to inflate productivity. That creates a conflict between organizational expectations and professional honesty.
+              </p>
+            </div>
+
+            <div class="panel p-4">
+              <h3 class="text-lg font-medium mt-0">Decision & Rationale</h3>
+              <p class="text-gray-700 text-sm">
+                I would refuse to falsify performance data and instead practice transparency. Integrity drives trust and long-term organizational health; manipulated data may help short-term optics but damages credibility, morale, and decision-making.
+              </p>
+              <p class="text-gray-500 text-xs mt-2"><strong>Reference:</strong> Hadar-Shoval, D. et al. (2024). Embedded values-like shape ethical reasoning of large language models on primary care ethical dilemmas. Heliyon.</p>
+            </div>
+
+            <div class="panel p-4">
+              <h3 class="text-lg font-medium mt-0">Action Plan</h3>
+              <ol class="list-decimal list-inside text-gray-700 text-sm space-y-1">
+                <li>Explain accurate data and implications to management, inviting collaboration to improve outcomes.</li>
+                <li>Document requests and decisions to preserve accountability.</li>
+                <li>Implement training/metrics changes to track real improvement rather than masking performance.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <!-- Personal Code of Ethics -->
+        <article class="panel" id="code">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3">Personal Code of Ethics (as IT Supervisor)</h2>
+          <p class="lead">Core values to guide decisions, leadership, and interactions with teams and stakeholders.</p>
+
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li><strong>Transparency</strong> — Open communication about status, expectations, and challenges.</li>
+            <li><strong>Accountability</strong> — Own decisions, correct errors quickly, and fairly recognize contributions.</li>
+            <li><strong>Respect</strong> — Inclusive, attentive, and constructive engagement with all team members.</li>
+            <li><strong>Data protection</strong> — Uphold privacy, security, and ethical handling of sensitive information.</li>
+          </ul>
+
+          <p class="text-gray-500 text-xs mt-2"><strong>Reference:</strong> Jahanzeb, S., & Raja, U. (2024). Does ethical climate overcome the effect of supervisor narcissism on employee creativity? Applied Psychology.</p>
+        </article>
+
+        <!-- Customer Service -->
+        <article id="customer" class="panel" aria-labelledby="custTitle">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3" id="custTitle">Customer Service Standards Statement</h2>
+          <p class="lead">Approach and expectations for interactions between IT support and end users.</p>
+
+          <div class="panel p-4 mb-4">
+            <h3 class="text-lg font-medium mt-0">Statement</h3>
+            <p class="text-gray-700 text-sm">
+              As an IT supervisor, I believe excellent customer service is built on respect, timely responses, and clear communication. Users are people — not tickets. Active listening, avoiding jargon, and follow-ups form the core of our support culture.
+            </p>
+            <p class="text-gray-500 text-xs mt-2"><strong>Reference:</strong> Xiaoliang, M., et al. (2024). Design of a large language model for improving customer service in telecom operators.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="panel p-4">
+              <h3 class="text-lg font-medium mt-0">Support Principles</h3>
+              <ol class="list-decimal list-inside text-gray-700 text-sm space-y-1">
+                <li>Respectful, patient communication</li>
+                <li>Prompt triage and escalation</li>
+                <li>Proactive education and documentation</li>
+                <li>Follow-up to ensure long-term resolution</li>
+              </ol>
+            </div>
+
+            <div class="panel p-4">
+              <h3 class="text-lg font-medium mt-0">Customer Service Goals</h3>
+              <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+                <li>Reduce average resolution time</li>
+                <li>Improve satisfaction to ≥ 90%</li>
+                <li>Standardize communication templates and SLAs</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Escalation Matrix -->
+        <article class="panel" id="escalation">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3">Escalation Matrix</h2>
+          <p class="lead">Who handles what, response time expectations, and escalation triggers.</p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-4 py-3 font-semibold text-gray-500">Tier / Role</th>
+                  <th scope="col" class="px-4 py-3 font-semibold text-gray-500">Handled By</th>
+                  <th scope="col" class="px-4 py-3 font-semibold text-gray-500">Types of Issues</th>
+                  <th scope="col" class="px-4 py-3 font-semibold text-gray-500">Typical Response Time</th>
+                  <th scope="col" class="px-4 py-3 font-semibold text-gray-500">Escalation Criteria</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-dashed border-gray-100">
+                  <td class="px-4 py-3">Tier 1</td>
+                  <td class="px-4 py-3">Helpdesk / Service Desk</td>
+                  <td class="px-4 py-3">Passwords, basic software installs</td>
+                  <td class="px-4 py-3">Within 15–30 min</td>
+                  <td class="px-4 py-3">Not resolved in 1 hour</td>
+                </tr>
+                <tr class="border-b border-dashed border-gray-100">
+                  <td class="px-4 py-3">Tier 2</td>
+                  <td class="px-4 py-3">Technical Support Specialists</td>
+                  <td class="px-4 py-3">Config errors, system bugs</td>
+                  <td class="px-4 py-3">Within 1 hour</td>
+                  <td class="px-4 py-3">Requires deeper troubleshooting</td>
+                </tr>
+                <tr class="border-b border-dashed border-gray-100">
+                  <td class="px-4 py-3">Tier 3</td>
+                  <td class="px-4 py-3">System Engineers / Developers / Vendors</td>
+                  <td class="px-4 py-3">Infrastructure failures, code-level fixes</td>
+                  <td class="px-4 py-3">Within 2 hours</td>
+                  <td class="px-4 py-3">Vendor or engineering access needed</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3">Manager / Incident Coordinator</td>
+                  <td class="px-4 py-3">IT Supervisor / Incident Manager</td>
+                  <td class="px-4 py-3">Critical business-impacting incidents</td>
+                  <td class="px-4 py-3">Immediate engagement</td>
+                  <td class="px-4 py-3">SLA breaches, executive concern</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- Incident Report -->
+        <article class="panel" id="incident">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3">Incident Report — IT-2025-0061</h2>
+          <p class="lead">Summary of a real incident and steps taken to resolve it.</p>
+
+          <div class="mono">
+            <strong>Incident ID:</strong> IT-2025-0061<br>
+            <strong>Reported By:</strong> James Carter — Marketing<br>
+            <strong>Date & Time:</strong> June 20, 2025 — 10:15 AM<br>
+            <strong>Department:</strong> Marketing<br><br>
+
+            <strong>1. Incident Description</strong><br>
+            Outlook mail delivery/sync failure affecting ~12 Marketing users; Tier 1 troubleshooting unsuccessful.<br><br>
+
+            <strong>2. People Involved</strong><br>
+            James Carter (Marketing), Sarah Nguyen (Helpdesk), Raj Patel (Tier 2)<br><br>
+
+            <strong>3. Impact</strong><br>
+            12 users affected; inability to send/receive client messages and use shared schedules.<br><br>
+
+            <strong>4. Response Actions</strong><br>
+            Tier 1: basic triage and logs → escalated to Tier 2 → found Outlook update misconfiguration → rollback patch and restart.<br><br>
+
+            <strong>5. Timeline</strong><br>
+            10:15 AM — Ticket created (Sarah Nguyen)<br>
+            10:45 AM — Escalated to Tier 2 (Sarah Nguyen)<br>
+            11:10 AM — Root cause identified (Raj Patel)<br>
+            11:40 AM — Patch rollback & restart (Raj Patel)<br>
+            12:00 PM — Service confirmed restored (Raj Patel)<br><br>
+
+            <strong>6. Resolution & Status</strong><br>
+            Patch rollback restored mail functionality. Case closed.
+          </div>
+
+          <p class="text-gray-500 text-xs mt-2"><strong>Reference:</strong> Kamil, M. Z., Khan, F., Amyotte, P., & Ahmed, S. (2024). Multi-source heterogeneous data integration for incident likelihood analysis. Computers & Measurement Unit.</p>
+        </article>
+
+        <!-- Gantt Chart Section -->
+        <article id="gantt-chart-section" class="panel">
+            <h2 class="text-xl font-semibold text-teal-700 mb-3">15-Week Project Timeline (Gantt Chart)</h2>
+            <p class="lead">A visual representation of key project tasks and their anticipated durations.</p>
+            <div class="gantt-chart-container w-full overflow-x-auto p-4 bg-gray-50 rounded-lg border border-gray-100">
+                <img src="gantt.svg" alt="Project Gantt Chart" class="gantt-chart-image min-w-[750px]"/>
+            </div>
+            <p class="text-gray-500 text-xs mt-2">This chart provides an overview of project phases and dependencies. Designed for clarity and responsiveness.</p>
+        </article>
+      </section>
+
+      <!-- Right column: side info -->
+      <aside class="lg:col-span-1 space-y-8">
+        <!-- Headshot & contact -->
+        <div class="panel flex flex-col items-center text-center">
+          <img src="https://placehold.co/120x120/E0E7FF/0B5ED7?text=SM" alt="Saleem Mohammed headshot" class="w-24 h-24 rounded-2xl object-cover mb-4 border-4 border-blue-100 shadow-md" />
+          <div>
+            <h3 class="text-lg font-semibold mt-0">Saleem Mohammed</h3>
+            <div class="meta text-gray-500 text-sm">IT Supervisor (aspiring) • Information Technology Field Experience — EX20</div>
+            <div class="mt-4 text-sm space-y-1">
+              <div><strong>Email:</strong> <a class="text-blue-600 hover:underline" href="mailto:saleemmohammed@gmail.com">saleemmohammed@gmail.com</a></div>
+              <div><strong>Résumé:</strong> <a class="text-blue-600 hover:underline" href="your_resume.pdf" target="_blank">Download (PDF)</a></div>
+              <div><strong>LinkedIn:</strong> <a class="text-blue-600 hover:underline" href="https://www.linkedin.com/in/saleemmohammed" target="_blank">linkedin.com/in/saleemmohammed</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini budget plan -->
+        <div id="budget" class="panel">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3">Mini Budget Plan (Summary)</h2>
+          <p class="lead">Category, item, purpose, unit cost (monthly if applicable).</p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+              <thead class="bg-gray-50">
+                <tr><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Category</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Specific Item</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Purpose</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Unit Cost</th></tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-dashed border-gray-100"><td>Software</td><td>Zoom Pro License</td><td>Team meetings & remote support</td><td>$15</td></tr>
+                <tr class="border-b border-dashed border-gray-100"><td>Software</td><td>Helpdesk Ticketing Tool</td><td>Manage & track support tickets</td><td>$50</td></tr>
+                <tr class="border-b border-dashed border-gray-100"><td>Training</td><td>Online IT Training Course</td><td>Skill development for staff</td><td>$200</td></tr>
+                <tr class="border-b border-dashed border-gray-100"><td>Hardware</td><td>Ergonomic Chairs</td><td>Improve comfort & productivity</td><td>$100</td></tr>
+                <tr class="border-b border-dashed border-gray-100"><td>Hardware</td><td>Replacement Keyboards</td><td>Replace faulty keyboards</td><td>$40</td></tr>
+                <tr><td>Misc.</td><td>Office Supplies</td><td>Daily supplies</td><td>$50</td></tr>
+                <tr class="font-bold">
+                  <td colspan="3" class="px-4 py-3 text-right">Total / Monthly</td>
+                  <td class="px-4 py-3">$455</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KPI Dashboard -->
+        <div id="kpi" class="panel">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3">KPI Dashboard — 4-Week Tracking</h2>
+          <p class="lead">Quick view of team performance across four weeks.</p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+              <thead class="bg-gray-50">
+                <tr><th scope="col" class="px-4 py-3 font-semibold text-gray-500">KPI</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Week 1</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Week 2</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Week 3</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Week 4</th><th scope="col" class="px-4 py-3 font-semibold text-gray-500">Target</th></tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-dashed border-gray-100"><td>Avg Ticket Resolution (hrs)</td><td>5.2</td><td>4.8</td><td>4.3</td><td>4.1</td><td>≤ 4</td></tr>
+                <tr class="border-b border-dashed border-gray-100"><td>Customer Satisfaction (%)</td><td>85%</td><td>88%</td><td>91%</td><td>93%</td><td>≥ 90%</td></tr>
+                <tr><td>Tickets Closed (count)</td><td>145</td><td>158</td><td>170</td><td>165</td><td>≥ 160</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="status red">Week 1: Improving</span>
+            <span class="status yellow">Weeks 2–3: On target</span>
+            <span class="status green">Week 4: On target</span>
+          </div>
+        </div>
+
+        <!-- Employee warning memo (compact) -->
+        <div id="hr" class="panel">
+          <h2 class="text-xl font-semibold text-teal-700 mb-3">Employee Warning Memo (Excerpt)</h2>
+          <div class="mono">
+            Date: July 20, 2025<br>
+            Employee: James Carter — Help Desk Technician<br>
+            Subject: Formal Warning — Violation of Attendance Policy<br><br>
+
+            Violation: Missing work without informing supervisor (July 15, 17, 19, 2025). Monitoring for 30 days; further absences may lead to suspension or termination.<br><br>
+
+            Supervisor: Violet Mayers
+          </div>
+          <p class="text-gray-500 text-xs mt-2"><strong>Reference:</strong> Min, G. (2024). The Employees' Dilemma: Balancing Internal Reporting, Whistleblowing, and Insider Trading Risks.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="mt-8 text-center text-gray-500 text-sm">
+      <div>Prepared by <strong class="font-semibold">Saleem Mohammed</strong> • Information Technology Field Experience — EX20 • 3 Aug 2025</div>
+      <div class="mt-1">Instructor: Michael Moifolley</div>
+    </footer>
+  </div>
+</body>
+</html>
+```
+
+---
+
+### `style.css`
+
+This `style.css` file contains custom CSS variables and a few specific styles that complement the Tailwind CSS framework. It keeps the core theme elements separate for easy modification.
+
+
+```css
+/* Custom CSS Variables (complementing Tailwind CSS) */
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0b5ed7;
+  --accent-2: #0f766e;
+  --danger: #e11d48;
+  --glass: rgba(255, 255, 255, 0.6);
+  --radius: 12px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+/* Basic resets and base styles (already handled by Tailwind, minimal here) */
+* {
+  box-sizing: border-box;
+}
+
+/* Specific custom styles not easily achieved with simple Tailwind classes */
+.site {
+  /* This max-width will ensure content doesn't stretch too wide on very large screens */
+  max-width: 1100px; /* Overriding Tailwind's default max-w-7xl for a slightly narrower site */
+}
+
+/* The grid layout specific to the main content area */
+.grid {
+  grid-template-columns: 1fr 360px; /* Custom two-column layout */
+}
+
+@media (max-width: 1023px) { /* Tailwind's lg breakpoint is 1024px */
+  .grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}
+
+/* Styles for the table headers and cells to maintain original look */
+table thead th {
+  text-align: left;
+  padding: 10px 8px;
+  background: linear-gradient(90deg, #f8fafc, #ffffff);
+  border-bottom: 1px solid #eef2f6;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+table tbody td {
+  padding: 10px 8px;
+  border-bottom: 1px dashed #f1f5f9;
+  color: #0f172a;
+  vertical-align: top;
+}
+
+/* General link styling */
+a.small {
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
+a.small:hover {
+  text-decoration: underline;
+}
+
+/* This is where the custom .panel, .lead, .mono, .status classes are defined using @apply in a real Tailwind setup,
+   but for CDN usage, they are often inlined in <style> or directly applied to elements.
+   I've moved them to the <style> tag in index.html for this example's structure,
+   as including @apply directives directly in a separate CSS file linked via CDN can be complex without a build process.
+   For a true modern setup, you'd use PostCSS/Tailwind CLI to process this file.
+*/
+```
+
+---
+
+### `gantt.svg`
+
+This `gantt.svg` file has been redesigned for a more modern and visually engaging appearance. It uses gradients, subtle shadows, and clear labels to make the timeline easier to read and more aesthetically pleasing. It's designed to be responsive within its container.
+
+
+```xml
+<svg width="100%" height="250" viewBox="0 0 1000 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ganttTitle ganttDesc">
+    <title id="ganttTitle">15-Week Project Timeline (Gantt Chart)</title>
+    <desc id="ganttDesc">Visual representation of project tasks and their anticipated durations over a 15-week period, from January to May 2025.</desc>
+
+    <!-- Define gradients and filters -->
+    <defs>
+        <linearGradient id="taskGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="taskGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+        </filter>
+    </defs>
+
+    <!-- Background and Grid Lines -->
+    <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF" rx="8" ry="8"/>
+
+    <!-- Horizontal grid lines for tasks -->
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="80" x2="1000" y2="80" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="120" x2="1000" y2="120" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="160" x2="1000" y2="160" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1000" y2="200" stroke="#E5E7EB" stroke-width="1"/>
+
+    <!-- Vertical week/month separators -->
+    <line x1="100" y1="0" x2="100" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="500" y1="0" x2="500" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="700" y1="0" x2="700" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="250" stroke="#D1D5DB" stroke-width="1"/>
+
+    <!-- Timeline Labels (Weeks, adjust for full 15 weeks if needed) -->
+    <text x="50" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W1</text>
+    <text x="150" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W3</text>
+    <text x="250" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W5</text>
+    <text x="350" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W7</text>
+    <text x="450" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W9</text>
+    <text x="550" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W11</text>
+    <text x="650" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W13</text>
+    <text x="750" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W15</text>
+    <text x="850" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W17</text>
+    <text x="950" y="25" font-family="Inter, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">W19</text>
+
+
+    <!-- Tasks -->
+    <!-- Task 1: Project Initiation -->
+    <text x="10" y="65" font-family="Inter, sans-serif" font-size="14" fill="#333">Project Initiation</text>
+    <rect x="50" y="50" width="100" height="25" rx="5" ry="5" fill="url(#taskGradient1)" filter="url(#shadow)"/> <!-- 2 weeks -->
+    <text x="100" y="67" font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">2 Weeks</text>
+
+    <!-- Task 2: Requirements Analysis -->
+    <text x="10" y="105" font-family="Inter, sans-serif" font-size="14" fill="#333">Requirements Analysis</text>
+    <rect x="150" y="90" width="200" height="25" rx="5" ry="5" fill="url(#taskGradient2)" filter="url(#shadow)"/> <!-- 4 weeks -->
+    <text x="250" y="107" font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">4 Weeks</text>
+
+    <!-- Task 3: Design & Prototyping -->
+    <text x="10" y="145" font-family="Inter, sans-serif" font-size="14" fill="#333">Design &amp; Prototyping</text>
+    <rect x="350" y="130" width="150" height="25" rx="5" ry="5" fill="url(#taskGradient1)" filter="url(#shadow)"/> <!-- 3 weeks -->
+    <text x="425" y="147" font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">3 Weeks</text>
+
+    <!-- Task 4: Development Phase -->
+    <text x="10" y="185" font-family="Inter, sans-serif" font-size="14" fill="#333">Development Phase</text>
+    <rect x="500" y="170" width="300" height="25" rx="5" ry="5" fill="url(#taskGradient2)" filter="url(#shadow)"/> <!-- 6 weeks -->
+    <text x="650" y="187" font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">6 Weeks</text>
+
+    <!-- Task 5: Testing & Deployment -->
+    <text x="10" y="225" font-family="Inter, sans-serif" font-size="14" fill="#333">Testing &amp; Deployment</text>
+    <rect x="800" y="210" width="150" height="25" rx="5" ry="5" fill="url(#taskGradient1)" filter="url(#shadow)"/> <!-- 3 weeks -->
+    <text x="875" y="227" font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">3 Weeks</text>
+
+    <!-- Today's line -->
+    <!-- Assuming current date is around Week 8 for demonstration purposes -->
+    <line x1="400" y1="35" x2="400" y2="245" stroke="#EF4444" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="400" y="245" font-family="Inter, sans-serif" font-size="12" fill="#EF4444" text-anchor="middle" dy="1.2em">Today</text>
+</svg>
+```
+
+---
+
+### `README.md`
+
+This `README.md` provides instructions for setting up your modernized portfolio on GitHub Pages.
+
+
+# Saleem Mohammed — Modernized IT Supervisor Readiness Portfolio
+
+This repository hosts a modern, responsive web portfolio for Saleem Mohammed, built with HTML, Tailwind CSS, and a custom SVG Gantt chart. It showcases key aspects of IT supervisor readiness, including ethical dilemmas, budget planning, customer service standards, KPI tracking, and incident reporting.
+
+## Features ✨
+
+* **Modern Design:** Clean, professional aesthetics with updated typography and spacing.
+* **Responsive Layout:** Adapts seamlessly to various screen sizes (desktop, tablet, mobile).
+* **Detailed Content:** Integration of Deliverable #7 content, covering critical IT supervisor areas.
+* **Interactive Navigation:** Smooth scrolling to different sections of the portfolio.
+* **Enhanced Gantt Chart:** A visually improved SVG Gantt chart illustrating project timelines with gradients and clear labels.
+
+## Files Included 📁
+
+* `index.html`: The main HTML file structuring the portfolio content.
+* `style.css`: A custom CSS file containing core variables and specific styles to complement Tailwind CSS.
+* `gantt.svg`: A standalone SVG file for the modernized 15-week project Gantt chart.
+
+## How to Host on GitHub Pages 🚀
+
+Follow these simple steps to deploy your portfolio using GitHub Pages:
+
+1.  **Create a New Repository:** Log in to your GitHub account and create a new public repository (e.g., `saleemmohammed-portfolio`).
+2.  **Upload Files:** Upload all three files (`index.html`, `style.css`, and `gantt.svg`) into the root of your new repository.
+3.  **Enable GitHub Pages:**
+    * Navigate to your repository on GitHub.
+    * Click on the **"Settings"** tab.
+    * In the left sidebar, click on **"Pages"** under the "Code and automation" section.
+    * Under "Build and deployment", select **"Deploy from a branch"** for the source.
+    * For "Branch", choose `main` (or your primary branch) and click **"Save"**.
+4.  **Access Your Site:** After a few moments, GitHub Pages will deploy your site. You'll see a link to your live portfolio website (e.g., `https://your-username.github.io/your-repository-name/`) on the GitHub Pages settings page.
+
+## Customization 🎨
+
+* **Content:** Easily update text content in `index.html`.
+* **Styling:** Modify colors, fonts, and spacing using Tailwind CSS classes directly in `index.html` or by adjusting the custom variables in `style.css`.
+* **Gantt Chart:** Edit `gantt.svg` directly to change tasks, durations, colors, or add more details. The SVG is designed to be easily editable.
+
+Enjoy your modernized IT Supervisor Readiness Portfol

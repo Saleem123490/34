@@ -1,0 +1,280 @@
+/* Custom CSS Variables */
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0b5ed7;
+  --accent-2: #0f766e;
+  --danger: #e11d48;
+  --glass: rgba(255, 255, 255, 0.6);
+  --radius: 12px;
+  /* Ensure Inter font is used */
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+/* Base styles and resets */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* Use a gradient background for modern feel */
+  background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  padding: 24px; /* Global padding */
+}
+
+.site {
+  max-width: 1100px; /* Constrain max width for content */
+  margin: 0 auto; /* Center the site content */
+  background: transparent;
+  padding: 20px;
+}
+
+/* Header styles */
+header.top {
+  display: flex;
+  flex-direction: column; /* Stack on small screens */
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.brand {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 6px 18px rgba(11, 94, 215, 0.18);
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; /* Allow navigation items to wrap */
+  justify-content: center; /* Center nav items on small screens */
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(11, 94, 215, 0.06);
+  border: 1px solid rgba(11, 94, 215, 0.06);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(11, 94, 215, 0.1);
+  color: var(--accent-2);
+}
+
+/* Main grid layout */
+main.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 360px; /* Two columns for desktop */
+  align-items: start;
+}
+
+/* Responsive adjustments for main grid */
+@media (max-width: 980px) {
+  main.grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Panel/Card styles */
+.panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(12, 18, 31, 0.06);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.panel h2 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: var(--accent-2);
+}
+
+.panel p.lead {
+  color: var(--muted);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Headshot styling */
+.headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 14px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+  border: 3px solid rgba(15, 118, 110, 0.08);
+}
+
+/* Grid helper classes (flexbox based) */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive card lists (grid based) */
+.cards {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table thead th {
+  text-align: left;
+  padding: 10px 8px;
+  background: linear-gradient(90deg, #f8fafc, #ffffff);
+  border-bottom: 1px solid #eef2f6;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+table tbody td {
+  padding: 10px 8px;
+  border-bottom: 1px dashed #f1f5f9;
+  color: #0f172a;
+  vertical-align: top;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* KPI chip styles */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.06);
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Gantt Chart container and image responsiveness */
+.gantt-chart-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scroll if content overflows */
+  border-radius: 10px;
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+  border: 1px dashed rgba(15, 23, 42, 0.04);
+  padding: 1rem; /* Add some padding around the SVG */
+}
+
+.gantt-chart-image {
+  width: 100%; /* Make SVG responsive to container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+  min-width: 750px; /* Ensure a minimum width for readability on small screens when scrolled */
+}
+
+/* Memo / Incident text block */
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 13px;
+  background: #fbfdff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eef6ff;
+}
+
+/* Table status indicators */
+.status {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.status.green {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+
+.status.yellow {
+  background: rgba(245, 158, 11, 0.08);
+  color: #b45309;
+}
+
+.status.red {
+  background: rgba(239, 68, 68, 0.08);
+  color: #dc2626;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 22px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+a.small {
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
